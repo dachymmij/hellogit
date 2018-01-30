@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+
+class Cars{
+	private:
+		int NumOfWheels;
+		string color;
+	public:
+
+		void setColor(string thisColor){
+			color=thisColor;
+		}
+		string getColor(){
+			return color;		
+		}
+	Cars(){
+		color="red";	
+	}
+
+
+}
+
+int main(){
+
+	vector<Cars> newCar;
+	newCar[1].setColor("blue");
+	newCar[1].getColor();
+
+}
